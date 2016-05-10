@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CPSC 464 Prototype">
+    <meta name="author" content="Megan Bond">
+    
+    <link rel="icon" type="image/png" href="img/unnamed.png">
+    
+    <title>Backpacker Pro</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/jquery.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/amazingslider.js"></script>
+    <script src="http://uguru-realestate-us-jun202013.businesscatalyst.com/3d-slider/sliderengine/initslider-1.js"></script>
+    
+    <!-- Include jQuery Popup Overlay -->
+    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.11/jquery.popupoverlay.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Google Map API -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCbQlOijBO2rUj1o15I_npM4xpU1uqYKBg"></script>
+    
+    <!-- Map Javascript -->
+    <script type="text/javascript" src="js/clickEvents.js"></script>   
+    
+    <!-- Start non-bootstrap css -->
+    <style>
+        .bg-4   {
+            background-color: #2f2f2f;
+            color: #ffffff;
+        }
+        body   {
+            background-color: #2f2f2f;
+        }
+        .textchange {
+            color: #aaa;
+        }
+        .textchange-1 {
+            color: #444;
+        }
+    </style>
+    <!-- End non-bootsrap css -->
+</head>
+
+
+<body>
+    <!-- Start header code from: http://bootsnipp.com/snippets/featured/toggle-navbar-with-slide-down-animation -->
+    <div class="container-fluid">
+        <!-- navbar for search -->
+        <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Backpacker Pro</a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-3">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" title="Return to List Page">Home</a></li>
+                <li><a href="#" title="Not in service.">Services</a></li>
+                <li><a href="#" title="Not in service.">News</a></li>
+                <li><a href="#" title="Not in service.">Contact</a></li>
+                <li><a href="#" title="Not in service.">Login</a></li>
+                <li><a href="index.html" title="Not in service."><i class="glyphicon glyphicon-search"></i>     </a></li>
+            </ul>
+            </div> <!-- /.navbar-collapse -->
+            
+        </div> <!-- /.container -->
+        </nav> <!-- /.navbar -->
+    </div> <!-- /.container-fluid -->
+    <!-- End header code from: http://bootsnipp.com/snippets/featured/toggle-navbar-with-slide-down-animation -->
+    
+    <!-- Start page title -->
+    <div class="container textchange">
+        <h1>Search Results<h2>
+        <small>Template itinerary search results for "France"...</small>
+        <hr><!-- Break line -->
+    </div>
+    <!-- End page title -->
+    
+    <!-- Start results code from: http://bootsnipp.com/snippets/AVX7K && http://bootsnipp.com/snippets/featured/blog-post-list-with-photo -->
+    <div class="container">
+        <div class="notice notice-success">
+            <div class="media">
+                <a class="pull-left">
+                    <img class="media-object" src="http://placekitten.com/150/150" href="#">
+                </a>
+                <div class="media-body">
+                <h2 class="media-heading"><a href="template.html" id="paris">Paris, France</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
+                molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
+                amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
+                venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+                <br>
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> <b>Itinerary Added:</b> 7 months ago </span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 157 reviews</span>
+                    <li>|</li>
+                    <li>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span> Share this: </span>
+                        <span><i class="fa fa-facebook-square" href="#" title="Share to facebook not in service."></i></span>
+                        <span><i class="fa fa-twitter-square" href="#" title="Share to twitter not in service."></i></span>
+                        <span><i class="fa fa-google-plus-square" href="#" title="Share to google+ not in service."></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+        <div class="notice notice-success">
+            <div class="media">
+                <a class="pull-left">
+                    <img class="media-object" src="http://placekitten.com/150/150" href="#">
+                </a>
+                <div class="media-body">
+                <h2 class="media-heading"><a href="template.html" id="france">France</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
+                molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
+                amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
+                venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+                <br>
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> <b>Itinerary Added:</b> 12 days ago </span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 2018 reviews</span>
+                    <li>|</li>
+                    <li>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span> Share this: </span>
+                        <span><i class="fa fa-facebook-square" href="#" title="Share to facebook not in service."></i></span>
+                        <span><i class="fa fa-twitter-square" href="#" title="Share to twitter not in service."></i></span>
+                        <span><i class="fa fa-google-plus-square" href="#" title="Share to google+ not in service."></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="notice notice-warning">
+            <div class="media">
+                <a class="pull-left">
+                    <img class="media-object" src="http://placekitten.com/150/150" href="#">
+                </a>
+                <div class="media-body">
+                <h2 class="media-heading"><a href="template.html" id="orleans">Orleans, France</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
+                molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
+                amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
+                venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+                <br>
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> <b>Itinerary Added:</b> 3 months ago </span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 15 reviews</span>
+                    <li>|</li>
+                    <li>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span> Share this: </span>
+                        <span><i class="fa fa-facebook-square" href="#" title="Share to facebook not in service."></i></span>
+                        <span><i class="fa fa-twitter-square" href="#" title="Share to twitter not in service."></i></span>
+                        <span><i class="fa fa-google-plus-square" href="#" title="Share to google+ not in service."></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="notice notice-warning">
+            <div class="media">
+                <a class="pull-left">
+                    <img class="media-object" src="http://placekitten.com/150/150" href="#">
+                </a>
+                <div class="media-body">
+                <h2 class="media-heading"><a href="template.html" id="nice">Nice, France</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
+                molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
+                amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
+                venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+                <br>
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> <b>Itinerary Added:</b> 8 weeks ago </span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 15 reviews</span>
+                    <li>|</li>
+                    <li>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span> Share this: </span>
+                        <span><i class="fa fa-facebook-square" href="#" title="Share to facebook not in service."></i></span>
+                        <span><i class="fa fa-twitter-square" href="#" title="Share to twitter not in service."></i></span>
+                        <span><i class="fa fa-google-plus-square" href="#" title="Share to google+ not in service."></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="notice notice-danger">
+            <div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placekitten.com/150/150" href="#">
+                </a>
+                <div class="media-body">
+                <h2 class="media-heading"><a href="template.html" id="lyon">Lyon, France</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
+                molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
+                amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
+                venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+                <br>
+                <ul class="list-inline list-unstyled">
+                    <li><span><i class="glyphicon glyphicon-calendar"></i> <b>Itinerary Added:</b> 2 months ago </span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 15 reviews</span>
+                    <li>|</li>
+                    <li>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span> Share this: </span>
+                        <span><i class="fa fa-facebook-square" href="#" title="Share to facebook not in service."></i></span>
+                        <span><i class="fa fa-twitter-square" href="#" title="Share to twitter not in service."></i></span>
+                        <span><i class="fa fa-google-plus-square" href="#" title="Share to google+ not in service."></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!--container close-->
+    <!-- Start results code from manipulating: http://bootsnipp.com/snippets/AVX7K && http://bootsnipp.com/snippets/featured/blog-post-list-with-photo -->
+    </div>
+    
+    <footer>
+<style>
+    .bg-4   {
+        background-color: #2f2f2f;
+        color: #ffffff;
+    }
+    body   {
+        background-color: #2f2f2f;
+    }
+    .textchange {
+        color: #aaa;
+    }
+    .textchange-1 {
+        color: #444;
+    }
+</style>
+
+<!-- Start footer code -->
+    <div class="container-fluid">
+        <!-- navbar for search -->
+        <nav class="navbar navbar-inverse">
+        
+            <div class="container">
+            
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html" title="Return to top of page.">Backpacker Pro</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.github.com/nyxora" title="Find me."> Prototype page: <i class="glyphicon glyphicon-copyright-mark" title="copyright mark"></i>  2016 Megan Bond  </a></li>
+                </ul>
+                
+            </div> <!-- /.container -->
+        
+        </nav> <!-- /.navbar -->
+    </div> <!-- /.container-fluid -->
+    <!-- End footer code -->
+</footer>
+    
+</body>
