@@ -10,7 +10,28 @@ function chToParis() {
     var locales = ["La Tour Eiffel, Paris, France", "The Louvre, Paris, France", "L'Arc de Triomphe, Paris, France", "Montmartre, Paris, France", "La Musee d'Orsay, Paris, France", "Notre Dame de Paris, Paris, France", "Paris France Hotel, 72 Rue de Turbigo, 75003 Paris, France"];
     sessionStorage.setItem("locales", JSON.stringify(locales));
     
-    localStorage.setItem("itinInfo", "<h4><strong><em>La Tour Eiffel, Paris, France</em></strong></h4><p>Visit the famous Eiffel Tower, constructed in 1889 for the World's fair, this wrought iron tower stands over 1000 feet tall. Climb the stairs up to the second floor for a grand view of Paris or take the elevator to the very top and take in the most breattaking sight in all of Paris. Enjoy a meal on the second floor at the Jules Verne restaurant. The most famous monument in all of Paris will be sure to leave a lasting impression and some wonderful memories.</p><br><h4><strong><em>The Louvre, Paris, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><em>L'Arc de Triomphe, Paris, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><strong><em>Montmartre, Paris, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><strong><em>La Musee d'Orsay, Paris, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><strong><em>Notre Dame de Paris, Paris, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><strong><em>Paris France Hotel, Paris, France</em></strong></h4><p>This is where you'll be staying.</p>");
+    var itinInfo = "<h4><strong><em>La Tour Eiffel, Paris, France</em></strong></h4><p>Visit the famous Eiffel Tower, "+
+    "constructed in 1889 for the World's fair, this wrought iron tower stands over 1000 feet tall. Climb the stairs up "+
+    "to the second floor for a grand view of Paris or take the elevator to the very top and take in the most breattaking "+
+    "sight in all of Paris. Enjoy a meal on the second floor at the Jules Verne restaurant. The most famous monument in "+
+    "all of Paris will be sure to leave a lasting impression and some wonderful memories. </p><br><h4><strong><em>The "+
+    "Louvre, Paris, France</em></strong></h4><p>Visit the Louvre, the world's largest museam at over 60,000 square feet. "+
+    "This famous Frecnh landmark is home to over 35,000 objects of art of many different kinds dating from prehistoric "+
+    "artifacts to 21st century art. The art buffs dream, there is so much to see at the Louvre that going just once will "+
+    "never be enough. One can see the Mona Lisa, the Venus de Milo and so much more. There is more than enough art to bring "+
+    "any art lover coming back for more. </p><br><h4><em>L'Arc de Triomphe, Paris, France</em></strong></h4><p>L'Arc de Triomphe, "+
+    "it is said that all roads in Paris lead to this famous Archway which allows for a fantastic view of the surrounding city "+
+    "sprawling around. After the fantastic view, take a stroll down the Champs-Elysses nearby, the famous shopping avenue of "+
+    "Paris and check out the many high class shops."+
+    " </p><br><h4><strong><em>Montmartre, Paris, France</em></strong></h4><p>"+
+    "balabalabldlklskljdkj </p><br><h4><strong><em>La Musee d'Orsay, Paris, France</em></strong></h4><p>balabalabldlklskljdkj"+
+    " </p><br><h4><strong><em>Notre Dame de Paris, Paris, France</em></strong></h4><p>Visit the famous Notre Dame de Paris, one "+
+    "of the most famous cathedrals in the whole world. See the brilliant gothic architecture of this medeival church from the "+
+    "outside, then check out the marvelous inside. A building you will remember for a long time to come" + ".</p><br><h4><strong><em>"+
+    "Paris France Hotel, Paris, France</em></strong></h4><p>This hotel is situated ideally in the center of Paris offering convenient "+
+    "access to the Louvre, great shopping centers and the many common areas tourists like to gather. Enjoy your sejours in Paris after "+
+    "a quick free breakfast in the Hotel dining room. </p>";
+    localStorage.setItem("itinInfo", itinInfo);
 }
 
 function chToFrance() {
@@ -23,7 +44,7 @@ function chToFrance() {
     var locales = ["Paris, France", "Nice, France", "Orleans, France", "Lyon, France", "Paris France Hotel, 72 Rue de Turbigo, 75003 Paris, France"];
     sessionStorage.setItem("locales", JSON.stringify(locales));
     
-    localStorage.setItem("itinInfo", "<h4><strong><em>Paris, France</em></strong></h4><p>Visit the famous Eiffel Tower, constructed in 1889 for the World's fair, this wrought iron tower stands over 1000 feet tall. Climb the stairs up to the second floor for a grand view of Paris or take the elevator to the very top and take in the most breattaking sight in all of Paris. Enjoy a meal on the second floor at the Jules Verne restaurant. The most famous monument in all of Paris will be sure to leave a lasting impression and some wonderful memories.</p><br><h4><strong><em>Nice, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><em>Orleans, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><strong><em>Lyon, France</em></strong></h4><p>balabalabldlklskljdkj</p><br><h4><strong><em>Paris France Hotel, Paris, France</em></strong></h4><p>This is where you'll be staying.</p>");
+    localStorage.setItem("itinInfo", "<h4><strong><em>Paris, France</em></strong></h4><p>Visit the famous Eiffel Tower, constructed in 1889 for the World's fair, this wrought iron tower stands over 1000 feet tall. Climb the stairs up to the second floor for a grand view of Paris or take the elevator to the very top and take in the most breattaking sight in all of Paris. Enjoy a meal on the second floor at the Jules Verne restaurant. The most famous monument in all of Paris will be sure to leave a lasting impression and some wonderful memories. </p><br><h4><strong><em>Nice, France</em></strong></h4><p>balabalabldlklskljdkj </p><br><h4><em>Orleans, France</em></strong></h4><p>balabalabldlklskljdkj </p><br><h4><strong><em>Lyon, France</em></strong></h4><p>balabalabldlklskljdkj </p><br><h4><strong><em>Paris France Hotel, Paris, France</em></strong></h4><p>This is where you'll be staying. </p>");
 }
 
 function chToOrleans() {
