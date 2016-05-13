@@ -44,41 +44,49 @@
         .textchange-1 {
             color: #444;
         }
+        .btn-glyphicon { 
+            padding:8px; 
+            background:#ffffff; 
+            margin-right:4px; 
+        }
+        .icon-btn { 
+            padding: 1px 15px 3px 2px; 
+            border-radius:50px;
+        }
     </style>
 </head>
 
 
-<body onload="initialize()">
+<body>
     
-    <!-- Start header code from: http://bootsnipp.com/snippets/featured/toggle-navbar-with-slide-down-animation -->
+    <!-- Start header code modified from: http://bootsnipp.com/snippets/featured/toggle-navbar-with-slide-down-animation -->
     <div class="container-fluid">
         <!-- navbar for search -->
         <nav class="navbar navbar-inverse">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Backpacker Pro</a>
-            </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-3">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html" title="Return to List Page">Home</a></li>
-                <li><a href="#" title="Not in service.">Services</a></li>
-                <li><a href="#" title="Not in service.">News</a></li>
-                <li><a href="#" title="Not in service.">Contact</a></li>
-                <li><a href="#" title="Not in service.">Login</a></li>
-                <li><a href="index.html" title="Not in service."><i class="glyphicon glyphicon-search"></i>     </a></li>
-            </ul>
-            </div> <!-- /.navbar-collapse -->
-            
-        </div> <!-- /.container -->
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Backpacker Pro</a>
+                    </div>
+                
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="searchResults.html" title="Return to List Page">Home</a></li>
+                        <li><a href="#" title="Not in service.">Services</a></li>
+                        <li><a href="#" title="Not in service.">News</a></li>
+                        <li><a href="#" title="Not in service.">Contact</a></li>
+                        <li><a href="#" title="Not in service.">Login</a></li>
+                        <li><a href="index.html" title="Not in service."><i class="glyphicon glyphicon-search"></i>     </a></li>
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+            </div> <!-- /.container -->
         </nav> <!-- /.navbar -->
     </div> <!-- /.container-fluid -->
     <!-- End header code from: http://bootsnipp.com/snippets/featured/toggle-navbar-with-slide-down-animation -->
@@ -86,7 +94,7 @@
     <!-- Start page body -->
     <div class="container textchange">
         
-        <div class="row"><!-- Start row 1 -->
+        <div class="row"><!-- Start row 1 - MAP AND PHOTOS SECTION -->
             <div class="col-sm-6"><!-- Start carousel column -->
                 <!-- Start carousel code from: http://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -155,43 +163,102 @@
             
         </div> <!-- End row 1 -->
         
-        <div class="row"> <!-- Start row 2 -->
-            <h2 class="text-center">Itinerary Name</h2>
-            <h4 class="text-center">Itinerary tag line...</h4>
+        <div class="row"> <!-- Start row 2 - ITINERARY INFO SECTION-->
+            <h1 class="text-center" id="itinName">Itinerary Name</h1>
+            <h4 class="text-center" id="itinTagL">Itinerary tag line...</h4>
+            <p class="text-center">
+                <a class="btn icon-btn btn-primary" href="#" title="Not in Service"><span class="glyphicon btn-glyphicon glyphicon-thumbs-up img-circle text-primary"></span>Like</a>
+                <a class="btn icon-btn btn-success" href="#" title="Not in Service"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Add Review</a>
+                <a class="btn icon-btn btn-warning" href="#" title="Not in Service"><span class="glyphicon btn-glyphicon glyphicon-edit img-circle text-success"></span>Edit</a>
+                <a class="btn icon-btn btn-info" href="#" title="Not in Service"><span class="glyphicon btn-glyphicon glyphicon-share img-circle text-info"></span>Share</a>
+            </p>
             <hr><!-- Break line -->
                         
-            <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
-            molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
-            amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
-            venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
-            molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
-            amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
-            venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
-            <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
-            molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
-            amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
-            venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
-            molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
-            amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
-            venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
-            <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
-            molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
-            amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
-            venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
-            <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, 
-            molestie tincidunt condimentum vitae, gravida a libero. Aenean sit 
-            amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet 
-            venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
-            <br>
+            <div class="container" id="itinInfo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                Aliquam in felis sit amet augue.</p>
+            </div>
+            <hr>
         </div> <!-- End row 2 -->
+        
+        <div class"row"> <!-- Start row 3 - REVIEW SECTION -->
+            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
+            <div class="container">
+                <div class="media"><h2><strong>Reviews</strong></h2><br></div>
+                <div class="well">
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://placekitten.com/150/150">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Receta 1</h4>
+                            <p class="text-right">By Francisco</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                               Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                               dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                               Aliquam in felis sit amet augue.</p>
+                            <ul class="list-inline list-unstyled">
+                                <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+                                <li>|</li>
+                                <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+                                <li>|</li>
+                                <li>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                <span><i class="fa fa-facebook-square"></i></span>
+                                <span><i class="fa fa-twitter-square"></i></span>
+                                <span><i class="fa fa-google-plus-square"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="well">
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="http://placekitten.com/150/150">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Receta 2</h4>
+                            <p class="text-right">By Anailuj</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                               Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis 
+                               dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                               Aliquam in felis sit amet augue.</p>
+                            <ul class="list-inline list-unstyled">
+                                    <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
+                                <li>|</li>
+                                <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+                                <li>|</li>
+                                <li>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                                <span><i class="fa fa-facebook-square"></i></span>
+                                <span><i class="fa fa-twitter-square"></i></span>
+                                <span><i class="fa fa-google-plus-square"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Review container -->
+        </div> <!-- End row 3 -->
     </div><!-- End page body -->
     
     

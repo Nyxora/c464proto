@@ -4,12 +4,15 @@
 
 $(window).load(function() {
         var map;
-        var bounds
+        var bounds;
         var locationCount;
         var infoWindow = null;
         // The array of locations to mark on the map.
         // Add as many locations as necessary.
         var locations = JSON.parse(sessionStorage.locales);
+        document.getElementById("itinInfo").innerHTML = localStorage.getItem("itinInfo"); 
+        document.getElementById("itinName").innerHTML = localStorage.getItem("title");
+        document.getElementById("itinTagL").innerHTML = localStorage.getItem("tag");
         // Init the map
         function init() {
             // Customize look of the map.
